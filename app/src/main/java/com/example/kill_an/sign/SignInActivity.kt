@@ -12,6 +12,6 @@ class SignInActivity : AppCompatActivity() {
 
         //민진 커밋 확인
 
-        
+
     }
 }
