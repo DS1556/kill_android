@@ -11,5 +11,7 @@ class SignInActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sign_in)
 
         //민진 커밋 확인
+
+        
     }
 }
