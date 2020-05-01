@@ -5,5 +5,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".sign.SignInActivity">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="338dp"/>
+    <EditText
+        android:id="@+id/edt_signin_id"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:hint="  아이디"
+        android:textColor="#e3bc34"
+        android:textSize="16.7sp"
+        android:background="@drawable/edt_signin_custom"/>
+    <EditText
+        android:id="@+id/edt_signin_pw"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_signin_id"
+        android:hint="  비밀번호"
+        android:textColor="#e3bc34"
+        android:textSize="16.7sp"
+        android:layout_marginTop="12.7dp"
+        android:background="@drawable/edt_signin_custom"/>
 
+    <Button
+        android:id="@+id/btn_signin_signin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="18.3sp"
+        android:textColor="#ffffff"
+        android:text="로그인"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_signin_pw"
+        android:layout_marginTop="54dp"
+        android:background="#f6d45b" />
+
+    <Button
+        android:id="@+id/btn_signin_signup"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_signin_signin"
+        android:background="#f6d45b"
+        android:layout_marginTop="9.3dp"
+        android:text="회원가입"
+        android:textColor="#ffffff"
+        android:textSize="18.3sp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
